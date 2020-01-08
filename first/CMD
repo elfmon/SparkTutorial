@@ -1,0 +1,5 @@
+docker build -t elfmon/spark:latest .
+docker build -t elfmon/scala-sbt:latest \
+    --build-arg SCALA_VERSION=2.12.8 \
+    --build-arg SBT_VERSION=1.2.8 \
+    github.com/ls12styler/scala-sbt
